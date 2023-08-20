@@ -5,6 +5,9 @@
  */
 package view;
 
+import controler.ProdutoControler;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author 182210120
@@ -49,6 +52,11 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton1.setText("Adicionar produto");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -104,6 +112,21 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        DefaultTableModel m = (DefaultTableModel) jTable1.getModel();
+        ProdutoControler p = new ProdutoControler();
+        boolean teste = p.criarProduto(jTextField1.getText(), jTextField2.getText());
+        if(teste){
+            String[] Coluna = {"",""};
+            Coluna[0] = String.valueOf(jTextField1.getText());
+            Coluna[1] = String.valueOf(jTextField2.getText());
+            m.addRow(Coluna);
+            
+        }
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

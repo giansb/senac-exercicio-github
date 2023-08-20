@@ -17,6 +17,10 @@ public class Produto {
         this.nome = nome;
         this.unidades = unidades;
     }
+    
+    public Produto(){
+        
+    }
 
     public String getNome() {
         return nome;
