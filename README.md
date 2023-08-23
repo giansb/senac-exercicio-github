@@ -2,4 +2,5 @@
 
 <p> Aplicação desenvolvida para reforçar comandos de git</p>
 
-![Screenshot_4](https://github.com/giansb/senac-exercicio-github/assets/107221898/a23437ca-3b13-4095-8e5a-6f43c195c1a6)
+![Captura de tela 2023-08-23 092815](https://github.com/giansb/senac-exercicio-github/assets/107221898/2c4eacd1-5169-4008-89e2-0c3d8c5cf55f)
+
